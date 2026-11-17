@@ -51,6 +51,15 @@ class HydrationStore extends ChangeNotifier {
     await _save();
   }
 
+  /// Deletes all locally saved hydration records after explicit confirmation.
+  Future<void> clearAll() async {
+    final prefs = await SharedPreferences.getInstance();
+    final removed = await prefs.remove(storageKey);
+    if (!removed) throw StateError('Could not delete locally stored hydration entries');
+    _entries.clear();
+    notifyListeners();
+  }
+
   Future<void> _save() async {
     final prefs = await SharedPreferences.getInstance();
     final ok = await prefs.setString(storageKey, jsonEncode(_entries.map((e) => e.toJson()).toList()));
