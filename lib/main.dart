@@ -1,3 +1,4 @@
+import 'localized_integer.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:hydration_universe/l10n/app_localizations.dart';
@@ -47,7 +48,7 @@ class _HydrationHomeState extends State<HydrationHome> {
   }
 
   Future<void> _add(AppLocalizations l) async {
-    final value = int.tryParse(amount.text.trim());
+    final value = parseLocalizedWholeNumber(amount.text, min: 1, max: 2000);
     if (value == null || value < 1 || value > 2000) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(l.invalid)));
       return;
