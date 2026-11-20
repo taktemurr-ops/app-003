@@ -1,16 +1,18 @@
 name: hydration_universe
-description: Offline-first hydration journal for Android and iOS.
+description: Offline-first hydration tracker for Android and iOS.
 publish_to: none
-version: 0.1.0+1
+version: 1.0.0+2
 environment:
-  sdk: '>=3.3.0 <4.0.0'
+  sdk: '>=3.5.0 <4.0.0'
 dependencies:
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  intl: ^0.20.2
+  intl: any
   shared_preferences: ^2.3.2
+  google_mobile_ads: '>=6.0.0 <10.0.0'
+  in_app_purchase: ^3.2.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

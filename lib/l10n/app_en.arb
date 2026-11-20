@@ -1,20 +1,327 @@
 {
   "@@locale": "en",
   "appTitle": "Hydration Universe",
-  "today": "Today's hydration",
-  "addWater": "Add water",
-  "amount": "Amount (mL)",
+  "tabToday": "Today",
+  "tabHistory": "History",
+  "tabStats": "Statistics",
+  "tabSettings": "Settings",
+  "welcomeTitle": "Welcome",
+  "welcomeBody": "Tell us a little about yourself and we will suggest a daily hydration goal. You can change everything later. All data stays on this device.",
+  "start": "Start",
+  "skip": "Skip, use 2 L",
   "history": "Today's entries",
   "empty": "No entries today",
-  "invalid": "Enter a whole number between 1 and 2000.",
-  "privacy": "Your hydration journal stays on this device.",
-  "total": "Total: {amount} mL",
-  "@total": {
+  "emptyDay": "No entries on this day",
+  "privacy": "Your hydration journal stays on this device. No account, no ads, no tracking.",
+  "notMedical": "This app is not a medical device. Ask a doctor if you have a health condition that affects fluid intake.",
+  "delete": "Delete entry",
+  "undo": "Undo",
+  "add": "Add",
+  "save": "Save",
+  "cancel": "Cancel",
+  "drink": "Drink",
+  "editEntry": "Edit amount",
+  "entryDeleted": "Entry deleted",
+  "goalReached": "Daily goal reached!",
+  "paceDone": "Great job, you are done for today.",
+  "paceAhead": "You are ahead of schedule.",
+  "paceOnTrack": "You are on track.",
+  "paceBehind": "A little behind — a glass now helps.",
+  "caffeineOver": "Above your daily caffeine limit.",
+  "remindersOff": "Reminders are off",
+  "noReminder": "No upcoming reminder",
+  "tomorrow": "Tomorrow",
+  "muteToday": "Mute today",
+  "unmuteToday": "Unmute",
+  "futureNotAllowed": "Entries cannot be in the future.",
+  "previousMonth": "Previous month",
+  "nextMonth": "Next month",
+  "last7Days": "7 days",
+  "last30Days": "30 days",
+  "dailyAverage": "Daily average",
+  "goalDays": "Goal days",
+  "currentStreak": "Current streak",
+  "bestStreak": "Best streak",
+  "drinkBreakdown": "Drinks",
+  "noData": "No data yet",
+  "achievements": "Achievements",
+  "achFirstDrink": "First sip",
+  "achFirstDrinkBody": "Log your first drink.",
+  "achFirstGoal": "Goal getter",
+  "achFirstGoalBody": "Reach your daily goal once.",
+  "achStreak3": "3-day streak",
+  "achStreak3Body": "Reach your goal 3 days in a row.",
+  "achStreak7": "Week of water",
+  "achStreak7Body": "Reach your goal 7 days in a row.",
+  "achStreak30": "Hydration habit",
+  "achStreak30Body": "Reach your goal 30 days in a row.",
+  "achDays30": "Loyal logger",
+  "achDays30Body": "Log drinks on 30 different days.",
+  "achLiters100": "100 liters",
+  "achLiters100Body": "Reach 100 liters of hydration in total.",
+  "bevWater": "Water",
+  "bevSparkling": "Sparkling water",
+  "bevHerbalTea": "Herbal tea",
+  "bevTea": "Tea",
+  "bevCoffee": "Coffee",
+  "bevMilk": "Milk",
+  "bevJuice": "Juice",
+  "bevSportsDrink": "Sports drink",
+  "bevSmoothie": "Smoothie",
+  "bevSoup": "Soup",
+  "bevCustom": "Custom drink",
+  "climate": "Climate today",
+  "climateCool": "Cool",
+  "climateTemperate": "Mild",
+  "climateHot": "Hot",
+  "climateVeryHot": "Very hot",
+  "lifeStage": "Life stage",
+  "lifeStandard": "Standard",
+  "lifePregnant": "Pregnant",
+  "lifeBreastfeeding": "Breastfeeding",
+  "weightKg": "Body weight (kg)",
+  "weightHelp": "Optional. Leave empty to use 2 L as the base.",
+  "goalManualNote": "You set this goal manually.",
+  "manualGoal": "Set goal manually",
+  "manualGoalOff": "Calculated from your profile",
+  "manualGoalRange": "500–8000 mL",
+  "sectionGoal": "Daily goal",
+  "sectionUnits": "Units and buttons",
+  "sectionReminders": "Reminders",
+  "sectionCaffeine": "Caffeine",
+  "sectionDrinks": "My drinks",
+  "sectionData": "Data and privacy",
+  "unitMl": "mL",
+  "unitUsOz": "US oz",
+  "unitUkOz": "UK oz",
+  "quickAmounts": "Quick add buttons",
+  "quickAmountsHelp": "Up to 6 amounts in mL, separated by spaces (e.g. 150 250 500).",
+  "remindersEnabled": "Drink reminders",
+  "wakeTime": "Wake-up time",
+  "sleepTime": "Bedtime",
+  "pauseAfterGoal": "Stop reminders after reaching the goal",
+  "remindersInAppNote": "The reminder schedule is shown in the app. System notifications arrive in the next version.",
+  "newDrink": "New drink",
+  "drinkName": "Name",
+  "hydrationPercent": "Counts toward goal (%)",
+  "caffeinePer100": "Caffeine (mg per 100 mL)",
+  "invalidDrink": "Please enter a name and valid numbers.",
+  "tooManyDrinks": "You can save up to 30 custom drinks.",
+  "copyCsv": "Copy as CSV (spreadsheet)",
+  "copyJson": "Copy full backup (JSON)",
+  "copied": "Copied to clipboard",
+  "deleteAllTitle": "Delete all data",
+  "deleteAllBody": "This permanently deletes all entries, settings and custom drinks on this device. It cannot be undone.",
+  "premiumTitle": "Premium",
+  "premiumSubtitle": "Remove ads and unlock advanced features.",
+  "premiumActive": "Premium is active",
+  "premiumThanks": "Thank you for supporting the app!",
+  "benefitNoAds": "No ads",
+  "benefitDrinks": "Unlimited custom drinks",
+  "benefitStats": "30-day statistics",
+  "benefitCsv": "CSV export for spreadsheets",
+  "benefitSupport": "Support new features",
+  "freeForever": "Logging, reminders, goals, history, backup and data deletion are always free.",
+  "storeUnavailable": "The store is not available on this device right now.",
+  "productsUnavailable": "Plans could not be loaded. Please try again later.",
+  "planMonthly": "Monthly",
+  "planYearly": "Yearly",
+  "planLifetime": "Lifetime (one-time)",
+  "bestValue": "Best value",
+  "purchaseFailed": "The purchase could not be completed.",
+  "restorePurchases": "Restore purchases",
+  "subscriptionTerms": "Subscriptions renew automatically until cancelled in your App Store or Google Play account settings. Payment is charged to your store account.",
+  "adPrivacyOptions": "Ad privacy choices",
+  "deleteAllConfirm": "Delete everything",
+  "addForDay": "Add drink · {date}",
+  "@addForDay": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "addedDrink": "Added {amount} {drink}",
+  "@addedDrink": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "drink": {
+        "type": "String"
+      }
+    }
+  },
+  "amountIn": "Amount ({unit})",
+  "@amountIn": {
+    "placeholders": {
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "beverageFactors": "Counts {percent}% toward goal · {caffeine} mg caffeine per 100 mL",
+  "@beverageFactors": {
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "caffeine": {
+        "type": "String"
+      }
+    }
+  },
+  "caffeineLimit": "Daily caffeine limit: {mg} mg",
+  "@caffeineLimit": {
+    "placeholders": {
+      "mg": {
+        "type": "String"
+      }
+    }
+  },
+  "caffeineToday": "Caffeine today: {mg} / {limit} mg",
+  "@caffeineToday": {
+    "placeholders": {
+      "mg": {
+        "type": "String"
+      },
+      "limit": {
+        "type": "String"
+      }
+    }
+  },
+  "chartLegend": "Dashed line: goal ({goal}). Dark bars reached the goal.",
+  "@chartLegend": {
+    "placeholders": {
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "chartSemantics": "Goal reached on {goalDays} of {days} days",
+  "@chartSemantics": {
+    "placeholders": {
+      "goalDays": {
+        "type": "String"
+      },
+      "days": {
+        "type": "String"
+      }
+    }
+  },
+  "dailyGoal": "Daily goal: {amount}",
+  "@dailyGoal": {
     "placeholders": {
       "amount": {
         "type": "String"
       }
     }
   },
-  "delete": "Delete entry"
+  "daysCount": "{count} days",
+  "@daysCount": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "exercisePerDay": "Exercise per day: {minutes} min",
+  "@exercisePerDay": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "goalActivity": "+ {amount} for exercise",
+  "@goalActivity": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "goalBaseDefault": "{amount} standard base",
+  "@goalBaseDefault": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "goalBaseWeight": "{amount} based on body weight (33 mL/kg)",
+  "@goalBaseWeight": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "goalClimate": "+ {amount} for hot weather",
+  "@goalClimate": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "goalLifeStage": "+ {amount} for pregnancy or breastfeeding",
+  "@goalLifeStage": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "invalidAmount": "Enter a whole number between 1 and {max}.",
+  "@invalidAmount": {
+    "placeholders": {
+      "max": {
+        "type": "String"
+      }
+    }
+  },
+  "nextReminder": "Next reminder: {time}",
+  "@nextReminder": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "ofGoal": "of {goal}",
+  "@ofGoal": {
+    "placeholders": {
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "progressSemantics": "{amount} of {goal} today",
+  "@progressSemantics": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "remaining": "{amount} to go",
+  "@remaining": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderInterval": "Remind every {minutes} min",
+  "@reminderInterval": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  }
 }
